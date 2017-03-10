@@ -1,0 +1,36 @@
+
+.movie img{
+		width: 120px;
+		height: 180px;
+	}
+
+.title{color:#598FC0}
+.average{color:#BC6E75;}
+
+@media (max-width: 767px){
+	.movie img{
+		width: 120px;
+		height: 180px;
+	}
+
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.movie img{
+		width: 120px;
+		height: 180px;
+	}
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px){
+	.movie img{
+	width: 200px;
+	height: 300px;
+	}
+}
+@media (min-width: 1200px){
+	.movie img{
+	width: 200px;
+	height: 300px;
+	}
+}
