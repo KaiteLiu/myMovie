@@ -6,8 +6,17 @@
 
 .title{color:#598FC0}
 .average{color:#BC6E75;}
-
+.row{text-align: center}
+.H4{
+		display: flex;
+    	flex-direction: row;
+    	justify-content: space-between;
+    	align-items: center;
+}
+.text-center{overflow:hidden;text-align: center;background: #E6E6E6}
+.text-center div{padding-top:10px;}
 @media (max-width: 767px){
+	.row{text-align: center}
 	.movie img{
 		width: 120px;
 		height: 180px;
@@ -15,6 +24,7 @@
 
 }
 @media (min-width: 768px) and (max-width: 991px){
+	.row{text-align: center}
 	.movie img{
 		width: 120px;
 		height: 180px;
@@ -23,12 +33,14 @@
 
 
 @media (min-width: 992px) and (max-width: 1199px){
+	.row{text-align: center}
 	.movie img{
 	width: 200px;
 	height: 300px;
 	}
 }
 @media (min-width: 1200px){
+	.row{text-align: center}
 	.movie img{
 	width: 200px;
 	height: 300px;

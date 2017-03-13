@@ -1388,7 +1388,6 @@ pre code {
   overflow-y: scroll;
 }
 .container {
-    text-align: center;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -1396,19 +1395,16 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    text-align: center;
     width: 750px;
   }
 }
 @media (min-width: 992px) {
   .container {
-    text-align: center;
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    text-align: center;
     width: 1170px;
   }
 }

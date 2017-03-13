@@ -3,7 +3,20 @@ var NavLink = require('./NavLink');
 var IndexLink = require('react-router').IndexLink;
 
 var App = React.createClass({
+	getInitialState: function() {
+	    return {
+	    	value:'search'
+	    }
+	  },
+	handleChange: function(event) {
+		var _this = this;
+	    _this.setState({
+	    	value:event.target.value
+	    })
+  	},
 	render:function(){
+		var link = "/search/"+this.state.value;
+		console.log(link);
 		return (
 				 <div className="navbar-wrapper">
       				<div className="container">
@@ -35,6 +48,13 @@ var App = React.createClass({
 				                    <li><a href="#">One more separated link</a></li>
 				                  </ul>
 				                </li>
+
+				                 <form className="navbar-form navbar-left">
+							        <div className="form-group">
+							          <input type="text" className="form-control" placeholder="search" onChange={this.handleChange} id="search" ref="text"/>
+							        </div>
+							        <button type="button" className="btn btn-default"><NavLink to={link}>搜索</NavLink></button>
+							      </form>
 				              </ul>
 				            </div>
 				          </div>
